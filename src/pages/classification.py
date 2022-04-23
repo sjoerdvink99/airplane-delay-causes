@@ -15,7 +15,7 @@ import plotly.graph_objects as go
 
 def app():
     # Generating training and testing split
-    df = utils.import_data('../data/classification_airline_delay_dataframe.csv')
+    df = utils.import_data('../../data/classification_airline_delay_dataframe.csv')
     X, y = df.drop(['ArrDelay'], 1), df['ArrDelay']
     X = scale(X)
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.33)
