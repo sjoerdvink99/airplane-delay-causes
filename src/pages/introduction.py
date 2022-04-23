@@ -5,7 +5,7 @@ import plotly.express as px
 
 def app():
     # Import dataframe from csv
-    file_path = '../data/airline_delay_dataframe.csv'
+    file_path = '../../data/airline_delay_dataframe.csv'
     df = utils.import_data(file_path)
 
     # Assignment introduction
