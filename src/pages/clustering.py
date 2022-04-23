@@ -10,7 +10,7 @@ from sklearn.preprocessing import scale
 
 def app():
     # Loading in the data & apply PCA
-    df = utils.import_data('../data/encoded_airline_delay_dataframe.csv')
+    df = utils.import_data('../../data/encoded_airline_delay_dataframe.csv')
     data = utils.apply_pca(df)
 
     # Model selection
